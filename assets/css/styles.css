@@ -1,10 +1,13 @@
 html {
     /*overflow: hidden;*//*Prevents browser overscrolling*/
     /*height: 100%;*//*Prevents browser overscrolling*/
+    position:relative;
+    min-height:100%;
 }
 body{
 	min-width:600px;
 	margin:auto;
+	margin-bottom:100px;
 	padding:0;
 	background:url('../images/small_steps.png');
 	/*height:100%; *//*Prevents browser overscrolling*/
@@ -121,6 +124,9 @@ section img{
 	margin-left:10px;
 }
 footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
 	border-top:5px solid #4aaaa5;
 	background:#666;
 	height:100px;
@@ -175,6 +181,8 @@ form input::placeholder{
 }
 form textarea{
 	height:200px;
+	width:96.5%;
+	resize:none;
 	border-color:#d3d3d3;
 }
 form button{
